@@ -73,12 +73,6 @@ function html(done) {
   gulp.src(basePath.app + '**/*')
     .pipe(gulp.dest(basePath.dist))
     .pipe(browsersync.stream());
-  done();
-}
-
-
-// Partials tasks
-function partials(done) {
   gulp.src(basePath.app + 'partials/*')
     .pipe(gulp.dest(basePath.dist + 'assets/partials'))
     .pipe(browsersync.stream());
@@ -113,7 +107,7 @@ function copy() {
 // Watch files
 function watchFiles() {
   gulp.watch(basePath.app+"*.*", html);
-  gulp.watch(basePath.app+"partials/*.*", partials);
+  gulp.watch(basePath.app+"partials/*.*", html);
   gulp.watch(basePath.app+"scss/**/*", styles);
   gulp.watch(basePath.app+"js/**/*", scripts);
   gulp.watch(basePath.app+"img/**/*", images);
@@ -122,6 +116,6 @@ function watchFiles() {
 
 // BUILD TASKS
 // ------------
-gulp.task('default', gulp.series(cleanDist, html, partials, styles, scripts, images, copy, gulp.parallel(watchFiles, runBrowsersync), function (done) {
+gulp.task('default', gulp.series(cleanDist, html, styles, scripts, images, copy, gulp.parallel(watchFiles, runBrowsersync), function (done) {
   done();
 }));

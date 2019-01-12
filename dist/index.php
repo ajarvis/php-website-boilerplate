@@ -15,6 +15,10 @@
 
     <?php include('partials/nav.php'); ?>
 
+    <main>
+      Main Content
+    </main>
+
     <?php include('partials/footer.php'); ?>   
 
   </body>
