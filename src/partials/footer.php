@@ -1,6 +1,28 @@
 <footer>
-  Footer Content
+  <div class="container">
+
+    <div class="row">
+      <div class="col text-center text-md-left">
+        Left
+      </div>
+      <div class="col text-center">
+        Center
+      </div>
+      <div class="col text-center text-md-right">
+        Right
+      </div>
+    </div>
+
+    <div>
+      Lower
+    </div>
+
+  </div>
 </footer>
+
+<div class="text-center">
+  Copyright
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

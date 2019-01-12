@@ -1,16 +1,22 @@
-<nav class="navbar navbar-primary navbar-toggleable-md bg-faded">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fa fa-bars"></i>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a class="nav-link" href="<?=BASEURL;?>">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="<?=BASEURL;?>about-us/">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="<?=BASEURL;?>products-services/">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="<?=BASEURL;?>reviews/">Link</a></li>
-        <li class="nav-item"><a class="nav-link" href="<?=BASEURL;?>project-gallery/">Link</a></li>
-        <li class="nav-item"><a class="nav-link" href="<?=BASEURL;?>contact-us/">Contact Us</a></li>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
       </ul>
     </div>
   </div>
