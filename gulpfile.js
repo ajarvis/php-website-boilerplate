@@ -70,7 +70,7 @@ function styles() {
 
 // HTML tasks
 function html(done) {
-  gulp.src(basePath.app + '**/*')
+  gulp.src(basePath.app + '*.*')
     .pipe(gulp.dest(basePath.dist))
     .pipe(browsersync.stream());
   gulp.src(basePath.app + 'partials/*')
