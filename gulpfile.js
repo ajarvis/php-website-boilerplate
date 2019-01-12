@@ -81,10 +81,11 @@ function html(done) {
 
 
 // JS tasks
-function scripts() {
-  return gulp.src(basePath.app + 'js/*.js')
+function scripts(done) {
+  gulp.src(basePath.app + 'js/app.js')
     .pipe(gulp.dest(basePath.dist + 'assets/js'))
     .pipe(browsersync.stream());
+  done();
 }
 
 
@@ -92,14 +93,6 @@ function scripts() {
 function images() {
   return gulp.src(basePath.app + 'images/**/*.*')
     .pipe(gulp.dest(basePath.dist + 'assets/images'))
-    .pipe(browsersync.stream());
-}
-
-
-// Copy tasks
-function copy() {
-  return gulp.src(basePath.app + 'assets/**/*.*')
-    .pipe(gulp.dest(basePath.dist + 'assets'))
     .pipe(browsersync.stream());
 }
 
@@ -116,6 +109,6 @@ function watchFiles() {
 
 // BUILD TASKS
 // ------------
-gulp.task('default', gulp.series(cleanDist, html, styles, scripts, images, copy, gulp.parallel(watchFiles, runBrowsersync), function (done) {
+gulp.task('default', gulp.series(cleanDist, html, styles, scripts, images, gulp.parallel(watchFiles, runBrowsersync), function (done) {
   done();
 }));
