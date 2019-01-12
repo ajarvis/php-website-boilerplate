@@ -1,0 +1,25 @@
+{
+  "name": "static-website-starter-kit",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Adam Jarvis",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajarvis/static-website-starter-kit"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-series": "^1.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "node-sass-tilde-importer": "^1.0.2"
+  }
+}
