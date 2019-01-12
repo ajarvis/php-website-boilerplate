@@ -2,6 +2,7 @@
 var browsersync   = require('browser-sync');
 var del           = require('del');
 var gulp          = require('gulp');
+var gulpConnect   = require('gulp-connect-php');
 var prefix        = require('gulp-autoprefixer');
 var notify        = require('gulp-notify');
 var plumber       = require('gulp-plumber');
@@ -37,12 +38,10 @@ function cleanDist() {
 
 // BrowserSync
 function runBrowsersync(done) {
-  browsersync.init({
-    server: {
-      baseDir: './dist'
-    },
-    port: 3000,
-    notify: true
+  gulpConnect.server({}, function (){
+    browsersync.init({
+      proxy: '127.0.0.1:8000/dist/'
+    });
   });
   done();
 }
@@ -71,7 +70,7 @@ function styles() {
 
 // HTML tasks
 function html(done) {
-  gulp.src(basePath.app + '**/*.html')
+  gulp.src(basePath.app + '**/*')
     .pipe(gulp.dest(basePath.dist))
     .pipe(browsersync.stream());
   done();
@@ -104,7 +103,7 @@ function copy() {
 
 // Watch files
 function watchFiles() {
-  gulp.watch(basePath.app+"*.html", html);
+  gulp.watch(basePath.app+"*.*", html);
   gulp.watch(basePath.app+"scss/**/*", styles);
   gulp.watch(basePath.app+"js/**/*", scripts);
   gulp.watch(basePath.app+"img/**/*", images);
