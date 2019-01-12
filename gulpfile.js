@@ -80,7 +80,7 @@ function html(done) {
 // Partials tasks
 function partials(done) {
   gulp.src(basePath.app + 'partials/*')
-    .pipe(gulp.dest(basePath.dist))
+    .pipe(gulp.dest(basePath.dist + 'assets/partials'))
     .pipe(browsersync.stream());
   done();
 }

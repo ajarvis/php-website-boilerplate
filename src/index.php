@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <title>Site Title</title>
+    <?php include('partials/head.php'); ?>
   </head>
   <body>
 
