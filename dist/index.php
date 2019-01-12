@@ -1,3 +1,4 @@
+<?php include('partials/config.php'); ?>
 
 <!doctype html>
 <html lang="en">
@@ -9,7 +10,11 @@
   </head>
   <body>
 
-    Content area
+    <?php include('partials/header.php'); ?>
+
+    <?php include('partials/nav.php'); ?>
+
+    <?php include('partials/footer.php'); ?>   
 
   </body>
 </html>
