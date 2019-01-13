@@ -24,8 +24,51 @@
 
     <main>
       
-      <section class="container">
-        Services
+      <section class="container my-5">
+        <h3 class="font-weight-bolder custom-text-primary">Our Services</h3>
+        <div class="row mt-4">
+
+          <div class="col-12 col-md-4 col-lg">
+            <div class="service-block">
+              <span class="custom-text-primary"><i class="fas fa-wrench"></i></span>
+              <h5 class="font-weight-bolder custom-text-primary">Service Name</h5>
+              <small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sem eu libero porta eleifend.</p></small>
+            </div>
+          </div>
+          
+          <div class="col-12 col-md-4 col-lg">
+            <div class="service-block">
+              <span class="custom-text-primary"><i class="fas fa-wrench"></i></span>
+              <h5 class="font-weight-bolder custom-text-primary">Service Name</h5>
+              <small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sem eu libero porta eleifend.</p></small>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg">
+            <div class="service-block">
+              <span class="custom-text-primary"><i class="fas fa-wrench"></i></span>
+              <h5 class="font-weight-bolder custom-text-primary">Service Name</h5>
+              <small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sem eu libero porta eleifend.</p></small>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg">
+            <div class="service-block">
+              <span class="custom-text-primary"><i class="fas fa-wrench"></i></span>
+              <h5 class="font-weight-bolder custom-text-primary">Service Name</h5>
+              <small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sem eu libero porta eleifend.</p></small>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg">
+            <div class="service-block">
+              <span class="custom-text-primary"><i class="fas fa-wrench"></i></span>
+              <h5 class="font-weight-bolder custom-text-primary">Service Name</h5>
+              <small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sem eu libero porta eleifend.</p></small>
+            </div>
+          </div>
+
+        </div>
       </section>
 
       <section class="container">

@@ -1,1 +1,34 @@
-/* Custom */
+/**** Fonts ****/
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/**** Colors ****/
+$primary: #365f7d;
+$primary-light: #6a92cd;
+
+.custom-text-primary {
+  color: $primary;
+}
+
+
+/**** Navigation ****/
+.navbar-custom {
+  background-color: $primary;
+  
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: #ffffff;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+
+/**** Service Block ****/
+.service-block {
+  border-bottom: 3px solid $primary-light;
+}

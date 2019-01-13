@@ -1,3 +1,27 @@
-/* Custom */
+/**** Fonts ****/
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600");
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/**** Colors ****/
+.custom-text-primary {
+  color: #365f7d;
+}
+
+/**** Navigation ****/
+.navbar-custom {
+  background-color: #365f7d;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+/**** Service Block ****/
+.service-block {
+  border-bottom: 3px solid #6a92cd;
+}
 
 /*# sourceMappingURL=maps/app.css.map */
