@@ -39,6 +39,7 @@ body {
 /**** Service Block ****/
 .service-block {
   border-bottom: 3px solid #6a92cd;
+  margin-bottom: 1rem;
 }
 
 /**** Quotes ****/

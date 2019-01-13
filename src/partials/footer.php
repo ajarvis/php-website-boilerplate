@@ -2,19 +2,45 @@
   <div class="container">
 
     <div class="row">
+
       <div class="col text-center text-md-left">
-        Left
+        <h5 class="font-weight-bolder">Title</h5>
+        <small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sem eu libero porta eleifend. Praesent elementum ipsum ut dui viverra condimentum. In porttitor viverra nisl et tincidunt. Vestibulum laoreet tristique tincidunt. Aenean lacinia, urna nec rutrum convallis, sem nulla feugiat orci, eget scelerisque nibh sem nec nulla.</p></small>
       </div>
+
       <div class="col text-center">
         Center
       </div>
+
       <div class="col text-center text-md-right">
-        Right
+        <small>
+          <ul class="list-unstyled">
+            <li><b>Site Name</b></li>
+            <li>123 Main Street</li>
+            <li>Raleigh, NC</li>
+            <li class="mt-3"><b>Phone:</b></li>
+            <li>(555) 555-5555</li>
+            <li>(555) 555-5555</li>
+            <li class="mt-3"><b>Fax:</b></li>
+            <li>(555) 555-5555</li>
+          </ul>
+        </small>
       </div>
+
     </div>
 
-    <div>
-      Lower
+    <div class="row">
+      <div class="col text-center text-md-left">
+
+      </div>
+      <div class="col text-center">
+        
+      </div>
+      <div class="col text-center text-md-right">
+        <a class="text-white" href="#"><i class="fab fa-facebook-square"></i></a>
+        <a class="text-white" href="#"><i class="fab fa-twitter-square"></i></a>
+        <a class="text-white" href="#"><i class="fab fa-youtube-square"></i></a>
+      </div>
     </div>
 
   </div>

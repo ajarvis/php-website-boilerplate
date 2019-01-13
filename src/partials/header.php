@@ -1,12 +1,14 @@
 <header class="site-header py-3">
   <div class="container">
     <div class="row">
-      <div class="col">
+
+      <div class="col-12 col-md">
         <a href="#">
           Logo
         </a>
       </div>
-      <div class="col text-md-right">
+
+      <div class="col-12 col-md text-center text-md-right">
         <a class="btn btn-primary btn-primary-light btn-sm" href="#">Schedule an Appointment</a>
         <div>Office: (555) 555-5555</div>
         <div>
@@ -15,6 +17,7 @@
           <a class="custom-text-primary" href="#"><i class="fab fa-youtube-square"></i></a>
         </div>
       </div>
+
     </div>
   </div>
 </header>
