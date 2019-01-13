@@ -71,20 +71,58 @@
         </div>
       </section>
 
-      <section class="container">
-        Marketing
+      <section class="marketing-bg text-white py-5">
+        <div class="container">
+          Marketing
+        </div>
       </section>
 
-      <section class="container">
-        Technology
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-12 col-md">
+              <h5 class="font-weight-bolder custom-text-primary">Service Name</h5>
+              <small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sem eu libero porta eleifend.</p></small>
+            </div>
+
+            <div class="col-12 col-md">
+              <h5 class="font-weight-bolder custom-text-primary">Service Name</h5>
+              <small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sem eu libero porta eleifend.</p></small>
+            </div>
+
+            <div class="col-12 col-md">
+              <h5 class="font-weight-bolder custom-text-primary">Service Name</h5>
+              <small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sem eu libero porta eleifend.</p></small>
+            </div>
+
+          </div>
+        </div>
       </section>
 
-      <section class="container">
-        Quotes
+      <section class="py-5 quotes-bg text-white">
+        <div class="container">
+          Quotes
+        </div>
       </section>
 
-      <section class="container">
-        Brands
+      <section class="py-5">
+        <div class="text-center">
+          <h4 class="mb-5">Products</h4>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              Logo
+            </div>
+            <div class="col text-center">
+              Logo
+            </div>
+            <div class="col text-center">
+              Logo
+            </div>
+          </div>
+        </div>
       </section>
 
     </main>

@@ -1,4 +1,4 @@
-<footer>
+<footer class="footer-custom text-white py-5">
   <div class="container">
 
     <div class="row">
@@ -20,8 +20,8 @@
   </div>
 </footer>
 
-<div class="text-center">
-  Copyright
+<div class="footer-copyright text-white text-center py-3">
+  <small>Copyright</small>
 </div>
 
 

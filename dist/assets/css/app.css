@@ -9,6 +9,14 @@ body {
   color: #365f7d;
 }
 
+.btn-primary-light {
+  background-color: #6a92cd;
+}
+
+.btn-primary-light:hover, .btn-primary-light:focus, .btn-primary-light:active {
+  background-color: #365f7d !important;
+}
+
 /**** Navigation ****/
 .navbar-custom {
   background-color: #365f7d;
@@ -17,11 +25,35 @@ body {
 .navbar-custom .navbar-nav .nav-item .nav-link {
   color: #ffffff;
   font-size: 1.1rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+/**** Marketing ****/
+.marketing-bg {
+  background-image: -webkit-gradient(linear, left top, right top, from(#6c707c), to(#8f92a1));
+  background-image: linear-gradient(to right, #6c707c, #8f92a1);
+  background-color: #6c707c;
 }
 
 /**** Service Block ****/
 .service-block {
   border-bottom: 3px solid #6a92cd;
+}
+
+/**** Quotes ****/
+.quotes-bg {
+  background-color: #365f7d;
+}
+
+/**** Footer ****/
+.footer-custom {
+  background-color: #184879;
+}
+
+.footer-copyright {
+  background-color: #6c92ca;
+  margin-top: 2px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

@@ -6,12 +6,20 @@ body {
 
 /**** Colors ****/
 $primary: #365f7d;
+$primary-dark: #184879;
 $primary-light: #6a92cd;
 
 .custom-text-primary {
   color: $primary;
 }
 
+.btn-primary-light {
+  background-color: $primary-light;
+
+  &:hover, &:focus, &:active {
+    background-color: $primary !important;
+  }
+}
 
 /**** Navigation ****/
 .navbar-custom {
@@ -22,13 +30,37 @@ $primary-light: #6a92cd;
       .nav-link {
         color: #ffffff;
         font-size: 1.1rem;
+        padding-left: .75rem;
+        padding-right: .75rem;
       }
     }
   }
+}
+
+/**** Marketing ****/
+.marketing-bg {
+  background-image: linear-gradient(to right, #6c707c , #8f92a1);
+  background-color: #6c707c;
 }
 
 
 /**** Service Block ****/
 .service-block {
   border-bottom: 3px solid $primary-light;
+}
+
+
+/**** Quotes ****/
+.quotes-bg {
+  background-color: $primary;
+}
+
+
+/**** Footer ****/
+.footer-custom {
+  background-color: $primary-dark;
+}
+.footer-copyright {
+  background-color: #6c92ca;
+  margin-top: 2px;
 }
