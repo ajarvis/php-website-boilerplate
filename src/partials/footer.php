@@ -3,16 +3,16 @@
 
     <div class="row">
 
-      <div class="col-12 c-col-md-4 text-center text-md-left">
+      <div class="col-12 col-md-4 text-center text-md-left">
         <h5 class="font-weight-bolder">Title</h5>
         <small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sem eu libero porta eleifend. Praesent elementum ipsum ut dui viverra condimentum. In porttitor viverra nisl et tincidunt. Vestibulum laoreet tristique tincidunt. Aenean lacinia, urna nec rutrum convallis, sem nulla feugiat orci, eget scelerisque nibh sem nec nulla.</p></small>
       </div>
 
-      <div class="col-12 c-col-md-4 text-center">
+      <div class="col-12 col-md-4 text-center">
         Center
       </div>
 
-      <div class="col-12 c-col-md-4 text-center text-md-right">
+      <div class="col-12 col-md-4 text-center text-md-right">
         <small>
           <ul class="list-unstyled">
             <li><b>Site Name</b></li>
@@ -30,13 +30,13 @@
     </div>
 
     <div class="row">
-      <div class="col-12 c-col-md-4 text-center text-md-left">
+      <div class="col-12 col-md-4 text-center text-md-left">
 
       </div>
-      <div class="col-12 c-col-md-4 text-center">
+      <div class="col-12 col-md-4 text-center">
         
       </div>
-      <div class="col-12 c-col-md-4 text-center text-md-right">
+      <div class="col-12 col-md-4 text-center text-md-right">
         <a class="text-white" href="#"><i class="fab fa-facebook-square"></i></a>
         <a class="text-white" href="#"><i class="fab fa-twitter-square"></i></a>
         <a class="text-white" href="#"><i class="fab fa-youtube-square"></i></a>

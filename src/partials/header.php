@@ -9,7 +9,7 @@
       </div>
 
       <div class="col-12 col-md text-center text-md-right">
-        <a class="btn btn-primary btn-primary-light btn-sm" href="#">Schedule an Appointment</a>
+        <a class="btn btn-sm btn-primary btn-primary-light" href="#">Schedule an Appointment</a>
         <div>Office: (555) 555-5555</div>
         <div>
           <a class="custom-text-primary" href="#"><i class="fab fa-facebook-square"></i></a>

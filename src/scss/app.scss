@@ -20,6 +20,16 @@ $primary-light: #6a92cd;
     background-color: $primary !important;
   }
 }
+.btn.btn-outline-primary {
+  border-color: $primary-light;
+  color: $primary-light;
+
+  &:hover {
+    border-color: $primary-light;
+    background-color: $primary-light;
+    color: #ffffff;
+  }
+}
 
 /**** Navigation ****/
 .navbar-custom {

@@ -17,6 +17,17 @@ body {
   background-color: #365f7d !important;
 }
 
+.btn.btn-outline-primary {
+  border-color: #6a92cd;
+  color: #6a92cd;
+}
+
+.btn.btn-outline-primary:hover {
+  border-color: #6a92cd;
+  background-color: #6a92cd;
+  color: #ffffff;
+}
+
 /**** Navigation ****/
 .navbar-custom {
   background-color: #365f7d;
