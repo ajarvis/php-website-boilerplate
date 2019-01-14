@@ -1,4 +1,4 @@
-<?php include('assets/partials/config.php'); ?>
+<?php include('../assets/partials/config.php'); ?>
 
 <!doctype html>
 <html lang="en">
@@ -6,12 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>Site Title</title>
-    <?php include('assets/partials/head.php'); ?>
+    <title>Internal</title>
+    <?php include('../assets/partials/head.php'); ?>
   </head>
   <body>
 
-    <?php include('assets/partials/header.php'); ?>
+    <?php include('../assets/partials/header.php'); ?>
 
     <div class="jumbotron jumbotron-fluid mb-0">
       <div class="container">
@@ -20,7 +20,7 @@
       </div>
     </div>
 
-    <?php include('assets/partials/nav.php'); ?>
+    <?php include('../assets/partials/nav.php'); ?>
 
     <main>
       
@@ -147,7 +147,7 @@
 
     </main>
 
-    <?php include('assets/partials/footer.php'); ?>   
+    <?php include('../assets/partials/footer.php'); ?>   
 
   </body>
 </html>

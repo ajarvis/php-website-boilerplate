@@ -40,9 +40,14 @@ function cleanDist() {
 function runBrowsersync(done) {
   gulpConnect.server({}, function (){
     browsersync.init({
-      proxy: '127.0.0.1:8000/dist/'
+      proxy: 'localhost:8000/dist/'
     });
   });
+  done();
+}
+function disconnectServer(done) {
+  gulpConnect.closeServer();
+  console.log("ran");
   done();
 }
 
@@ -70,7 +75,7 @@ function styles() {
 
 // HTML tasks
 function html(done) {
-  gulp.src(basePath.app + '*.*')
+  gulp.src(basePath.app + 'views/**/*.*')
     .pipe(gulp.dest(basePath.dist))
     .pipe(browsersync.stream());
   gulp.src(basePath.app + 'partials/*')
@@ -99,16 +104,16 @@ function images() {
 
 // Watch files
 function watchFiles() {
-  gulp.watch(basePath.app+"*.*", html);
+  gulp.watch(basePath.app+"views/**/*.*", html);
   gulp.watch(basePath.app+"partials/*.*", html);
   gulp.watch(basePath.app+"scss/**/*", styles);
   gulp.watch(basePath.app+"js/**/*", scripts);
-  gulp.watch(basePath.app+"img/**/*", images);
+  gulp.watch(basePath.app+"images/**/*", images);
 }
 
 
 // BUILD TASKS
 // ------------
-gulp.task('default', gulp.series(cleanDist, html, styles, scripts, images, gulp.parallel(watchFiles, runBrowsersync), function (done) {
+gulp.task('default', gulp.series(disconnectServer, cleanDist, html, styles, scripts, images, gulp.parallel(watchFiles, runBrowsersync), function (done) {
   done();
 }));
