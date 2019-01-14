@@ -3,7 +3,7 @@
     <div class="row">
 
       <div class="col-12 col-md text-center text-md-left">
-        <a href="#">
+        <a href="<?=BASEURL;?>">
           Logo
         </a>
       </div>
