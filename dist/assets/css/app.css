@@ -1,0 +1,71 @@
+/**** Fonts ****/
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600");
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/**** Colors ****/
+.custom-text-primary {
+  color: #365f7d;
+}
+
+.btn-primary-light {
+  background-color: #6a92cd;
+}
+
+.btn-primary-light:hover, .btn-primary-light:focus, .btn-primary-light:active {
+  background-color: #365f7d !important;
+}
+
+.btn.btn-outline-primary {
+  border-color: #6a92cd;
+  color: #6a92cd;
+}
+
+.btn.btn-outline-primary:hover {
+  border-color: #6a92cd;
+  background-color: #6a92cd;
+  color: #ffffff;
+}
+
+/**** Navigation ****/
+.navbar-custom {
+  background-color: #365f7d;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  font-size: 1.1rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+/**** Marketing ****/
+.marketing-bg {
+  background-image: -webkit-gradient(linear, left top, right top, from(#6c707c), to(#8f92a1));
+  background-image: linear-gradient(to right, #6c707c, #8f92a1);
+  background-color: #6c707c;
+}
+
+/**** Service Block ****/
+.service-block {
+  border-bottom: 3px solid #6a92cd;
+  margin-bottom: 1rem;
+}
+
+/**** Quotes ****/
+.quotes-bg {
+  background-color: #365f7d;
+}
+
+/**** Footer ****/
+.footer-custom {
+  background-color: #184879;
+}
+
+.footer-copyright {
+  background-color: #6c92ca;
+  margin-top: 2px;
+}
+
+/*# sourceMappingURL=maps/app.css.map */
