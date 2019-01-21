@@ -1,33 +1,33 @@
 // Load plugins
-var browsersync   = require('browser-sync');
-var cleanCSS      = require('gulp-clean-css');
-var del           = require('del');
-var gulp          = require('gulp');
-var gulpConnect   = require('gulp-connect-php');
-var htmlmin       = require('gulp-htmlmin');
-var imagemin      = require('gulp-imagemin');
-var prefix        = require('gulp-autoprefixer');
-var notify        = require('gulp-notify');
-var plumber       = require('gulp-plumber');
-var sass          = require('gulp-sass');
-var sourcemaps    = require('gulp-sourcemaps');
+var browsersync = require('browser-sync');
+var cleanCSS = require('gulp-clean-css');
+var del = require('del');
+var gulp = require('gulp');
+var gulpConnect = require('gulp-connect-php');
+var htmlmin = require('gulp-htmlmin');
+var imagemin = require('gulp-imagemin');
+var prefix = require('gulp-autoprefixer');
+var notify = require('gulp-notify');
+var plumber = require('gulp-plumber');
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 var tildeImporter = require('node-sass-tilde-importer');
 
 
 // Define paths
 var basePath = {
-  app:  'src/',
+  app: 'src/',
   dist: 'dist/',
 };
 
 
 // Build error messages
-const onError = function(err) {
+const onError = function (err) {
   notify.onError({
-    title:    "Gulp",
+    title: "Gulp",
     subtitle: "Failure!",
-    message:  "Error: <%= error.message %>",
-    sound:    "Basso"
+    message: "Error: <%= error.message %>",
+    sound: "Basso"
   })(err);
   this.emit('end');
 };
@@ -41,7 +41,7 @@ function cleanDist() {
 
 // BrowserSync
 function runBrowsersync(done) {
-  gulpConnect.server({}, function (){
+  gulpConnect.server({}, function () {
     browsersync.init({
       proxy: 'localhost:8000/dist/'
     });
@@ -65,11 +65,11 @@ var prefixerOptions = {
 function styles() {
   return gulp
     .src(basePath.app + 'scss/*.scss')
-    .pipe(plumber({errorHandler: onError}))
+    .pipe(plumber({ errorHandler: onError }))
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions))
     .pipe(prefix(prefixerOptions))
-    .pipe(cleanCSS({compatibility: '*'}))
+    .pipe(cleanCSS({ compatibility: '*' }))
     .pipe(sourcemaps.write('maps'))
     .pipe(gulp.dest(basePath.dist + 'assets/css'))
     .pipe(browsersync.stream());
@@ -102,7 +102,11 @@ function scripts(done) {
 // Image tasks
 function images() {
   return gulp.src(basePath.app + 'images/**/*.*')
-    .pipe(imagemin())
+    .pipe(imagemin({
+      interlaced: true,
+      progressive: true,
+      optimizationLevel: 5
+    }))
     .pipe(gulp.dest(basePath.dist + 'assets/images'))
     .pipe(browsersync.stream());
 }
@@ -110,11 +114,11 @@ function images() {
 
 // Watch files
 function watchFiles() {
-  gulp.watch(basePath.app+"views/**/*.*", html);
-  gulp.watch(basePath.app+"partials/*.*", html);
-  gulp.watch(basePath.app+"scss/**/*", styles);
-  gulp.watch(basePath.app+"js/**/*", scripts);
-  gulp.watch(basePath.app+"images/**/*", images);
+  gulp.watch(basePath.app + "views/**/*.*", html);
+  gulp.watch(basePath.app + "partials/*.*", html);
+  gulp.watch(basePath.app + "scss/**/*", styles);
+  gulp.watch(basePath.app + "js/**/*", scripts);
+  gulp.watch(basePath.app + "images/**/*", images);
 }
 
 
