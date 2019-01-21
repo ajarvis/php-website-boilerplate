@@ -7,10 +7,11 @@ var gulp = require('gulp');
 var gulpConnect = require('gulp-connect-php');
 var htmlmin = require('gulp-htmlmin');
 var imagemin = require('gulp-imagemin');
+var notify = require('gulp-notify');
 var plumber = require('gulp-plumber');
 var prefix = require('gulp-autoprefixer');
+var purgecss = require('gulp-purgecss');
 var rename = require('gulp-rename');
-var notify = require('gulp-notify');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var tildeImporter = require('node-sass-tilde-importer');
@@ -69,6 +70,9 @@ function styles() {
   return gulp
     .src(basePath.app + 'scss/*.scss')
     .pipe(plumber({ errorHandler: onError }))
+    .pipe(purgecss({
+      content: [basePath.app + "views/**/*.php"]
+    }))
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions))
     .pipe(prefix(prefixerOptions))

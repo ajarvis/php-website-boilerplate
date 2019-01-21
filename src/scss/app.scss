@@ -14,10 +14,11 @@ $primary-light: #6a92cd;
 }
 
 .btn-primary-light {
-  background-color: $primary-light;
+  background-color: $primary;
+  border: none;
 
   &:hover, &:focus, &:active {
-    background-color: $primary !important;
+    background-color: $primary-dark !important;
   }
 }
 .btn.btn-outline-primary {

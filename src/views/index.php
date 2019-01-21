@@ -5,8 +5,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <title>Site Title</title>
+    <meta name="description" content="A simple boilerplate to kick-off new web projects.">
+    <title>PHP Website Boilerplate</title>
     <?php include('assets/partials/head.php'); ?>
   </head>
   <body>
@@ -105,42 +105,6 @@
               <small><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sem eu libero porta eleifend.</p></small>
             </div>
 
-          </div>
-        </div>
-      </section>
-
-      <section class="py-5 quotes-bg text-white">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6">
-
-              <blockquote class="blockquote">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer text-white"><cite title="Source Title">John Smith</cite></footer>
-              </blockquote>
-
-              <a class="btn btn-outline-primary" href="#">Read Testimonials from our Customers</a>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-5">
-        <div class="text-center">
-          <h4 class="mb-5">Products</h4>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              Logo
-            </div>
-            <div class="col text-center">
-              Logo
-            </div>
-            <div class="col text-center">
-              Logo
-            </div>
           </div>
         </div>
       </section>

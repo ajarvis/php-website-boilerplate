@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "author": "Adam Jarvis",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "https://github.com/ajarvis/php-website-boilerplate"
@@ -22,6 +23,7 @@
     "gulp-imagemin": "^5.0.3",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
+    "gulp-purgecss": "^1.1.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-series": "^1.0.2",

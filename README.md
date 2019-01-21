@@ -26,5 +26,5 @@ A simple PHP boilerplate to kick-off new web projects.
     │   ├── js            # Add js here
     │   ├── scss          # Edit SCSS here (compiles to CSS)
     │   ├── partials      # Edit PHP includes (header, footer, etc)
-	  │   ├── views           # Edit HTML views
+    │   ├── views         # Edit HTML views
     ├── dist              # Don't Edit. /SRC/ builds to this directory.
