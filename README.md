@@ -14,17 +14,17 @@ A simple PHP boilerplate to kick-off new web projects.
 
 
 ### Get Started
-  git clone
-	npm install
-	npm start
+    git clone
+    npm install
+    npm start
 
 
 
 ### Project tree
-    ├── src                    # Edit files within this folder
+    ├── src               # Edit files within this folder
     │   ├── images        # Add images here
-    │   ├── js                # Add js here
-    │   ├── scss            # Edit SCSS here (compiles to CSS)
-    │   ├── partials        # Edit PHP includes (header, footer, etc)
-	│   ├── views           # Edit HTML views
-    ├── dist                    # Don't Edit. /SRC/ builds to this directory.
+    │   ├── js            # Add js here
+    │   ├── scss          # Edit SCSS here (compiles to CSS)
+    │   ├── partials      # Edit PHP includes (header, footer, etc)
+	  │   ├── views           # Edit HTML views
+    ├── dist              # Don't Edit. /SRC/ builds to this directory.
