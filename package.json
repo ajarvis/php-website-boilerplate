@@ -1,11 +1,11 @@
 {
-  "name": "static-website-starter-kit",
+  "name": "php-website-boilerplate",
   "version": "0.0.1",
   "description": "",
   "author": "Adam Jarvis",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ajarvis/static-website-starter-kit"
+    "url": "https://github.com/ajarvis/php-website-boilerplate"
   },
   "scripts": {
     "start": "gulp"
