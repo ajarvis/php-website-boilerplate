@@ -1,17 +1,20 @@
 // Load plugins
 var browsersync = require('browser-sync');
+var concat = require('gulp-concat');
 var cleanCSS = require('gulp-clean-css');
 var del = require('del');
 var gulp = require('gulp');
 var gulpConnect = require('gulp-connect-php');
 var htmlmin = require('gulp-htmlmin');
 var imagemin = require('gulp-imagemin');
-var prefix = require('gulp-autoprefixer');
-var notify = require('gulp-notify');
 var plumber = require('gulp-plumber');
+var prefix = require('gulp-autoprefixer');
+var rename = require('gulp-rename');
+var notify = require('gulp-notify');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var tildeImporter = require('node-sass-tilde-importer');
+var uglify = require('gulp-uglify');
 
 
 // Define paths
@@ -92,7 +95,11 @@ function html(done) {
 
 // JS tasks
 function scripts(done) {
-  gulp.src(basePath.app + 'js/app.js')
+  gulp.src(basePath.app + 'js/**/*.js')
+    .pipe(concat('scripts.js'))
+    .pipe(gulp.dest(basePath.dist + 'assets/js'))
+    .pipe(rename('scripts.min.js'))
+    .pipe(uglify())
     .pipe(gulp.dest(basePath.dist + 'assets/js'))
     .pipe(browsersync.stream());
   done();
