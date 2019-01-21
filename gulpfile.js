@@ -5,6 +5,7 @@ var del           = require('del');
 var gulp          = require('gulp');
 var gulpConnect   = require('gulp-connect-php');
 var htmlmin       = require('gulp-htmlmin');
+var imagemin      = require('gulp-imagemin');
 var prefix        = require('gulp-autoprefixer');
 var notify        = require('gulp-notify');
 var plumber       = require('gulp-plumber');
@@ -49,7 +50,6 @@ function runBrowsersync(done) {
 }
 function disconnectServer(done) {
   gulpConnect.closeServer();
-  console.log("ran");
   done();
 }
 
@@ -102,6 +102,7 @@ function scripts(done) {
 // Image tasks
 function images() {
   return gulp.src(basePath.app + 'images/**/*.*')
+    .pipe(imagemin())
     .pipe(gulp.dest(basePath.dist + 'assets/images'))
     .pipe(browsersync.stream());
 }
