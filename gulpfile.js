@@ -1,8 +1,10 @@
 // Load plugins
 var browsersync   = require('browser-sync');
+var cleanCSS      = require('gulp-clean-css');
 var del           = require('del');
 var gulp          = require('gulp');
 var gulpConnect   = require('gulp-connect-php');
+var htmlmin       = require('gulp-htmlmin');
 var prefix        = require('gulp-autoprefixer');
 var notify        = require('gulp-notify');
 var plumber       = require('gulp-plumber');
@@ -67,6 +69,7 @@ function styles() {
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions))
     .pipe(prefix(prefixerOptions))
+    .pipe(cleanCSS({compatibility: '*'}))
     .pipe(sourcemaps.write('maps'))
     .pipe(gulp.dest(basePath.dist + 'assets/css'))
     .pipe(browsersync.stream());
@@ -76,9 +79,11 @@ function styles() {
 // HTML tasks
 function html(done) {
   gulp.src(basePath.app + 'views/**/*.*')
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest(basePath.dist))
     .pipe(browsersync.stream());
   gulp.src(basePath.app + 'partials/*')
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest(basePath.dist + 'assets/partials'))
     .pipe(browsersync.stream());
   done();
