@@ -71,7 +71,8 @@ function styles() {
     .src(basePath.app + 'scss/*.scss')
     .pipe(plumber({ errorHandler: onError }))
     .pipe(purgecss({
-      content: [basePath.app + "views/**/*.php"]
+      content: [basePath.app + "views/**/*.php", basePath.app + "partials/**/*.php"],
+      
     }))
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions))
