@@ -1,6 +1,10 @@
 # PHP Website Boilerplate
 A simple PHP boilerplate to kick-off new web projects.
 
+[![CodeFactor](https://www.codefactor.io/repository/github/ajarvis/php-website-boilerplate/badge/master)](https://www.codefactor.io/repository/github/ajarvis/php-website-boilerplate/overview/master)
+[![dependencies Status](https://david-dm.org/ajarvis/php-website-boilerplate/status.svg)](https://david-dm.org/ajarvis/php-website-boilerplate)
+[![devDependencies Status](https://david-dm.org/ajarvis/php-website-boilerplate/dev-status.svg)](https://david-dm.org/ajarvis/php-website-boilerplate?type=dev)
+
 
 ### Features
 - BrowserSync and Live Reloading
